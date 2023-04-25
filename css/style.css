@@ -1,0 +1,171 @@
+@font-face {
+    font-family: Bilgres;
+    src: url("../recursos/Bilgres\ DEMO.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main-index {
+    background-color: rgba(245, 245, 245, 0.877);
+    min-height: 70vh;
+}
+
+.indexfontsize{
+    font-size: 22px;
+}
+
+
+
+#main-contacto {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 16%, rgba(190, 188, 185, 1) 100%);
+}
+.section-contacto{
+    height: 400px;
+}
+
+.main-nosotros {
+    background-color: rgb(255, 228, 73);
+}
+
+.main-galeria {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 16%, rgba(190, 188, 185, 1) 100%);
+}
+
+.falso-body {
+    background-color: rgba(245, 245, 245, 0.877);
+    min-height: 70vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: stretch;
+}
+
+
+.about {
+    font-family: 'Book', sans-serif;
+    margin: 0 200px;
+    display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+.about p {
+    border-top: 6px solid #000000;
+}
+
+#main-productos {
+    color: white;
+    background-color: rgb(255, 255, 255);
+}
+
+.divdisplay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.imagen {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.548);
+    transition: 0.5s;
+    margin: 15px;
+}
+
+.imagen:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    ;
+}
+
+.btn-primary {
+    background-color: #212529;
+}
+
+.ancho-maximo {
+    width: 100%;
+    margin: auto;
+}
+
+.logo {
+    width: 65px;
+}
+
+.logo-footer {
+    width: 21px;
+    height: 19px;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+    max-width: auto;
+    max-height: auto;
+}
+
+ul li a {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none
+}
+
+.textofooter {
+    font-size: 18px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 11px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 50%, rgba(190, 188, 185, 1) 100%);
+    min-height: 10vh;
+}
+
+.footerul{
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 470px) {
+    .footer{
+      display: flex;
+      flex-direction: row;
+    }
+    
+}
+
+@media (max-width: 775px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 540px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+
+
